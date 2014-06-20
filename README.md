@@ -9,12 +9,20 @@ It's advantages are
 - plain clojure
 - kind of didactic (general algorithm according to wikipedia article, zero assignment follows https://community.topcoder.com/tc?module=Static&d1=tutorials&d2=maxFlow 
 
+It's disadvantages are:
+
+- it's alpha (first shot, just carved out of one of my projects)
+- no testing
+- it's not the fastest (O(N^5) or something)
+- there is no clojar available right now
+
 ## Usage
 
 ;> (minimize t1)
+
 ;; {:cost 107, :assignments {0 0, 1 1, 2 3, 3 2}}
 
-You can use minimize-rectangle for non (nxn) matrices. 
+You can use minimize-rectangle for non (NxN) matrices. 
 
 ## License
 
