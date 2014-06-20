@@ -18,9 +18,15 @@ It's disadvantages are:
 
 ## Usage
 
-;> (minimize t1)
+    ;> (def m (->> (repeatedly 16 #(rand-int 100))
+		     (partition 4)
+		     (mapv vec)))
+    ;; #'hungarian.core/m
+    ;> (minimize m)
+    ;; {:cost 107, :assignments {0 0, 1 1, 2 3, 3 2}}
+    ;; Your mileage may vary
 
-;; {:cost 107, :assignments {0 0, 1 1, 2 3, 3 2}}
+There are predefined test matrices named t1 .. t5 in core.clj
 
 You can use minimize-rectangle for non (NxN) matrices. 
 
